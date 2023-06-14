@@ -13,6 +13,7 @@
 		747C65C62A3A7CD500D767C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 747C65C52A3A7CD500D767C5 /* Preview Assets.xcassets */; };
 		747C65C82A3A7CD500D767C5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C65C72A3A7CD500D767C5 /* Persistence.swift */; };
 		747C65CB2A3A7CD500D767C5 /* DigimonCharacterFinder_SwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 747C65C92A3A7CD500D767C5 /* DigimonCharacterFinder_SwiftUI.xcdatamodeld */; };
+		747C65D52A3A7D6F00D767C5 /* Digimon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C65D42A3A7D6F00D767C5 /* Digimon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		747C65C52A3A7CD500D767C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		747C65C72A3A7CD500D767C5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		747C65CA2A3A7CD500D767C5 /* DigimonCharacterFinder_SwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DigimonCharacterFinder_SwiftUI.xcdatamodel; sourceTree = "<group>"; };
+		747C65D42A3A7D6F00D767C5 /* Digimon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digimon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		747C65D22A3A7D1800D767C5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				747C65D42A3A7D6F00D767C5 /* Digimon.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				747C65CB2A3A7CD500D767C5 /* DigimonCharacterFinder_SwiftUI.xcdatamodeld in Sources */,
 				747C65C12A3A7CD400D767C5 /* ContentView.swift in Sources */,
 				747C65BF2A3A7CD400D767C5 /* DigimonCharacterFinder_SwiftUIApp.swift in Sources */,
+				747C65D52A3A7D6F00D767C5 /* Digimon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

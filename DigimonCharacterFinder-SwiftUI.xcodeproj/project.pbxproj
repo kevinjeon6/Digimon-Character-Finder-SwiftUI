@@ -56,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				747C65BE2A3A7CD400D767C5 /* DigimonCharacterFinder_SwiftUIApp.swift */,
-				747C65C02A3A7CD400D767C5 /* ContentView.swift */,
+				747C65D22A3A7D1800D767C5 /* Model */,
+				747C65D32A3A7D1D00D767C5 /* ViewModel */,
+				747C65D12A3A7D1300D767C5 /* Views */,
 				747C65C22A3A7CD500D767C5 /* Assets.xcassets */,
 				747C65C72A3A7CD500D767C5 /* Persistence.swift */,
 				747C65C92A3A7CD500D767C5 /* DigimonCharacterFinder_SwiftUI.xcdatamodeld */,
@@ -71,6 +73,28 @@
 				747C65C52A3A7CD500D767C5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		747C65D12A3A7D1300D767C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				747C65C02A3A7CD400D767C5 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		747C65D22A3A7D1800D767C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		747C65D32A3A7D1D00D767C5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

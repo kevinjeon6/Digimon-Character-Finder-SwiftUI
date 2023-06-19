@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		745579D42A40EC6C00471EED /* DigimonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745579D32A40EC6C00471EED /* DigimonViewModel.swift */; };
 		747C65BF2A3A7CD400D767C5 /* DigimonCharacterFinder_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C65BE2A3A7CD400D767C5 /* DigimonCharacterFinder_SwiftUIApp.swift */; };
 		747C65C12A3A7CD400D767C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C65C02A3A7CD400D767C5 /* ContentView.swift */; };
 		747C65C32A3A7CD500D767C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 747C65C22A3A7CD500D767C5 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		745579D32A40EC6C00471EED /* DigimonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonViewModel.swift; sourceTree = "<group>"; };
 		747C65BB2A3A7CD400D767C5 /* DigimonCharacterFinder-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DigimonCharacterFinder-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		747C65BE2A3A7CD400D767C5 /* DigimonCharacterFinder_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonCharacterFinder_SwiftUIApp.swift; sourceTree = "<group>"; };
 		747C65C02A3A7CD400D767C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		747C65D32A3A7D1D00D767C5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				745579D32A40EC6C00471EED /* DigimonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745579D42A40EC6C00471EED /* DigimonViewModel.swift in Sources */,
 				747C65C82A3A7CD500D767C5 /* Persistence.swift in Sources */,
 				747C65CB2A3A7CD500D767C5 /* DigimonCharacterFinder_SwiftUI.xcdatamodeld in Sources */,
 				747C65C12A3A7CD400D767C5 /* ContentView.swift in Sources */,

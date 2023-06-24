@@ -23,7 +23,7 @@ class DigimonViewModel: ObservableObject {
             
             let (data, response) = try await URLSession.shared.data(for: urlRequest)
             
-            guard(response as? HTTPURLResponse)?.statusCode == 200 else { return print("Server error")}
+            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else { return print("Server error")}
             
             let decoder = JSONDecoder()
             

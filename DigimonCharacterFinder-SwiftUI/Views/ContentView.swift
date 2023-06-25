@@ -10,34 +10,18 @@ import CoreData
 
 struct ContentView: View {
     
+    // MARK: - Properties
     @StateObject var viewModel = DigimonViewModel()
 
 
+    // MARK: - Body
     var body: some View {
         NavigationStack {
             List(viewModel.characters, id: \.self) {
                 info in
                 
-                HStack {
-                    AsyncImage(url: URL(string: info.img)) { phase in
-                        if let image = phase.image {
-                            image
-                                .resizable()
-                                .scaledToFit()
-                        } else if phase.error != nil {
-                            Text("Couldn't upload")
-                        } else {
-                            ProgressView()
-                        }
-                    }
-                    .frame(width: 100, height: 100)
-                    
-                    
-                    VStack(alignment: .leading) {
-                        Text(info.name)
-                        Text(info.level)
-                    }
-                }
+                DigimonRowView(digiInfo: info)
+
             }
             .listStyle(.plain)
             .navigationTitle("Digimon")

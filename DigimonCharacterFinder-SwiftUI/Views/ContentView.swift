@@ -47,6 +47,27 @@ struct ContentView: View {
             }
         }
     }
+    
+    
+    // MARK: - Nav Bar Color
+    //SwiftUI doesn't have an API to modify the appearance of the navigation bar, so you have to fall back on UIKit's UInavigationBarAppearance to configure it's appearance
+    init() {
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = UIColor(Color.blue)
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).backgroundColor = .systemBackground
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = .black
+
+        let cancelButton = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UIBarButtonItem.appearance().setTitleTextAttributes(cancelButton, for: .normal)
+
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().compactAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+
+    }
 }
 
 

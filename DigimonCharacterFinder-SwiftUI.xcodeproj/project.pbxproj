@@ -10,7 +10,7 @@
 		745579D42A40EC6C00471EED /* DigimonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745579D32A40EC6C00471EED /* DigimonViewModel.swift */; };
 		745579D62A48D83E00471EED /* DigimonRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745579D52A48D83E00471EED /* DigimonRowView.swift */; };
 		747C65BF2A3A7CD400D767C5 /* DigimonCharacterFinder_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C65BE2A3A7CD400D767C5 /* DigimonCharacterFinder_SwiftUIApp.swift */; };
-		747C65C12A3A7CD400D767C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C65C02A3A7CD400D767C5 /* ContentView.swift */; };
+		747C65C12A3A7CD400D767C5 /* DigimonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C65C02A3A7CD400D767C5 /* DigimonListView.swift */; };
 		747C65C32A3A7CD500D767C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 747C65C22A3A7CD500D767C5 /* Assets.xcassets */; };
 		747C65C62A3A7CD500D767C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 747C65C52A3A7CD500D767C5 /* Preview Assets.xcassets */; };
 		747C65C82A3A7CD500D767C5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C65C72A3A7CD500D767C5 /* Persistence.swift */; };
@@ -23,7 +23,7 @@
 		745579D52A48D83E00471EED /* DigimonRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonRowView.swift; sourceTree = "<group>"; };
 		747C65BB2A3A7CD400D767C5 /* DigimonCharacterFinder-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DigimonCharacterFinder-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		747C65BE2A3A7CD400D767C5 /* DigimonCharacterFinder_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonCharacterFinder_SwiftUIApp.swift; sourceTree = "<group>"; };
-		747C65C02A3A7CD400D767C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		747C65C02A3A7CD400D767C5 /* DigimonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonListView.swift; sourceTree = "<group>"; };
 		747C65C22A3A7CD500D767C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		747C65C52A3A7CD500D767C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		747C65C72A3A7CD500D767C5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		747C65D12A3A7D1300D767C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				747C65C02A3A7CD400D767C5 /* ContentView.swift */,
+				747C65C02A3A7CD400D767C5 /* DigimonListView.swift */,
 				745579D52A48D83E00471EED /* DigimonRowView.swift */,
 			);
 			path = Views;
@@ -180,7 +180,7 @@
 				747C65C82A3A7CD500D767C5 /* Persistence.swift in Sources */,
 				747C65CB2A3A7CD500D767C5 /* DigimonCharacterFinder_SwiftUI.xcdatamodeld in Sources */,
 				745579D62A48D83E00471EED /* DigimonRowView.swift in Sources */,
-				747C65C12A3A7CD400D767C5 /* ContentView.swift in Sources */,
+				747C65C12A3A7CD400D767C5 /* DigimonListView.swift in Sources */,
 				747C65BF2A3A7CD400D767C5 /* DigimonCharacterFinder_SwiftUIApp.swift in Sources */,
 				747C65D52A3A7D6F00D767C5 /* Digimon.swift in Sources */,
 			);

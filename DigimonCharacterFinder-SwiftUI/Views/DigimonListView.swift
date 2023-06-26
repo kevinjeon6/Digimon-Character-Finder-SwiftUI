@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct DigimonListView: View {
     
     // MARK: - Properties
     @StateObject var viewModel = DigimonViewModel()
@@ -30,6 +30,11 @@ struct ContentView: View {
                 try? await viewModel.getDigimonData()
             }
         }
+        .searchable(text: $viewModel.searchText,
+                    placement: .navigationBarDrawer(displayMode: .always),
+                    prompt: "Search for a Digimon"
+                    
+        )
     }
     
     
@@ -55,8 +60,8 @@ struct ContentView: View {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
+struct DigimonListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        DigimonListView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

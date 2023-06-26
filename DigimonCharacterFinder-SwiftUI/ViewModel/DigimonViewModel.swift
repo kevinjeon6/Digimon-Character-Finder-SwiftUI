@@ -11,6 +11,15 @@ import Foundation
 class DigimonViewModel: ObservableObject {
     
     @Published var characters = [Digimon]()
+    @Published var searchText = ""
+    
+    var searchResults: [Digimon] {
+        if searchText.isEmpty {
+            return characters
+        } else {
+            return characters.filter { $0.name.localizedCaseInsensitiveContains(searchText)}
+        }
+    }
     
     
     func getDigimonData() async throws {

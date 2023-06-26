@@ -13,7 +13,7 @@ struct DigimonCharacterFinder_SwiftUIApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DigimonListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

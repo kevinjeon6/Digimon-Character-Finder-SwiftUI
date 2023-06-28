@@ -11,13 +11,13 @@ import CoreData
 struct DigimonListView: View {
     
     // MARK: - Properties
-    @StateObject var viewModel = DigimonViewModel()
+    @StateObject private var viewModel = DigimonViewModel()
 
 
     // MARK: - Body
     var body: some View {
         NavigationStack {
-            List(viewModel.characters, id: \.self) {
+            List(viewModel.filterResults, id: \.self) {
                 info in
                 
                 DigimonRowView(digiInfo: info)
@@ -29,12 +29,29 @@ struct DigimonListView: View {
             .task {
                 try? await viewModel.getDigimonData()
             }
+            .toolbar {
+                ToolbarItem {
+                    Menu {
+                        Picker("", selection: $viewModel.filterStatus) {
+                            ForEach(LevelType.allCases) { digiLevel in
+                                Text(digiLevel.levelName)
+                                    .tag(digiLevel)
+                            }
+                        }
+                    } label: {
+                        Image(systemName: "line.3.horizontal.decrease.circle")
+                            .foregroundColor(.white)
+                        
+                    }
+                }
+            }
         }
         .searchable(text: $viewModel.searchText,
                     placement: .navigationBarDrawer(displayMode: .always),
                     prompt: "Search for a Digimon"
                     
         )
+    
     }
     
     
@@ -62,6 +79,6 @@ struct DigimonListView: View {
 
 struct DigimonListView_Previews: PreviewProvider {
     static var previews: some View {
-        DigimonListView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        DigimonListView()
     }
 }

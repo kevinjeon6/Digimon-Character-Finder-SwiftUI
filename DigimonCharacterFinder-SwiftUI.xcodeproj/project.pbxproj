@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		741664F42A4CE2DA00613770 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741664F32A4CE2DA00613770 /* FavoritesView.swift */; };
 		741664F92A4CE47200613770 /* LevelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741664F82A4CE47200613770 /* LevelType.swift */; };
+		741664FF2A4CF13700613770 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741664FE2A4CF13700613770 /* DataController.swift */; };
+		741665012A4CF1F200613770 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741665002A4CF1F200613770 /* TabBarView.swift */; };
 		745579D42A40EC6C00471EED /* DigimonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745579D32A40EC6C00471EED /* DigimonViewModel.swift */; };
 		745579D62A48D83E00471EED /* DigimonRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745579D52A48D83E00471EED /* DigimonRowView.swift */; };
 		747C65BF2A3A7CD400D767C5 /* DigimonCharacterFinder_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C65BE2A3A7CD400D767C5 /* DigimonCharacterFinder_SwiftUIApp.swift */; };
 		747C65C12A3A7CD400D767C5 /* DigimonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C65C02A3A7CD400D767C5 /* DigimonListView.swift */; };
 		747C65C32A3A7CD500D767C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 747C65C22A3A7CD500D767C5 /* Assets.xcassets */; };
 		747C65C62A3A7CD500D767C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 747C65C52A3A7CD500D767C5 /* Preview Assets.xcassets */; };
-		747C65C82A3A7CD500D767C5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C65C72A3A7CD500D767C5 /* Persistence.swift */; };
 		747C65CB2A3A7CD500D767C5 /* DigimonCharacterFinder_SwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 747C65C92A3A7CD500D767C5 /* DigimonCharacterFinder_SwiftUI.xcdatamodeld */; };
 		747C65D52A3A7D6F00D767C5 /* Digimon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747C65D42A3A7D6F00D767C5 /* Digimon.swift */; };
 /* End PBXBuildFile section */
@@ -23,6 +24,8 @@
 /* Begin PBXFileReference section */
 		741664F32A4CE2DA00613770 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		741664F82A4CE47200613770 /* LevelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelType.swift; sourceTree = "<group>"; };
+		741664FE2A4CF13700613770 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		741665002A4CF1F200613770 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		745579D32A40EC6C00471EED /* DigimonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonViewModel.swift; sourceTree = "<group>"; };
 		745579D52A48D83E00471EED /* DigimonRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonRowView.swift; sourceTree = "<group>"; };
 		747C65BB2A3A7CD400D767C5 /* DigimonCharacterFinder-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DigimonCharacterFinder-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,7 +33,6 @@
 		747C65C02A3A7CD400D767C5 /* DigimonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigimonListView.swift; sourceTree = "<group>"; };
 		747C65C22A3A7CD500D767C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		747C65C52A3A7CD500D767C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		747C65C72A3A7CD500D767C5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		747C65CA2A3A7CD500D767C5 /* DigimonCharacterFinder_SwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DigimonCharacterFinder_SwiftUI.xcdatamodel; sourceTree = "<group>"; };
 		747C65D42A3A7D6F00D767C5 /* Digimon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digimon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,6 +56,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		741664FA2A4CEAE100613770 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				741664FE2A4CF13700613770 /* DataController.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		747C65B22A3A7CD400D767C5 = {
 			isa = PBXGroup;
 			children = (
@@ -74,12 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				747C65BE2A3A7CD400D767C5 /* DigimonCharacterFinder_SwiftUIApp.swift */,
+				741664FA2A4CEAE100613770 /* CoreData */,
 				741664F52A4CE3B500613770 /* Helpers */,
 				747C65D22A3A7D1800D767C5 /* Model */,
 				747C65D32A3A7D1D00D767C5 /* ViewModel */,
 				747C65D12A3A7D1300D767C5 /* Views */,
 				747C65C22A3A7CD500D767C5 /* Assets.xcassets */,
-				747C65C72A3A7CD500D767C5 /* Persistence.swift */,
 				747C65C92A3A7CD500D767C5 /* DigimonCharacterFinder_SwiftUI.xcdatamodeld */,
 				747C65C42A3A7CD500D767C5 /* Preview Content */,
 			);
@@ -98,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				747C65C02A3A7CD400D767C5 /* DigimonListView.swift */,
+				741665002A4CF1F200613770 /* TabBarView.swift */,
 				741664F32A4CE2DA00613770 /* FavoritesView.swift */,
 				745579D52A48D83E00471EED /* DigimonRowView.swift */,
 			);
@@ -191,10 +202,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				745579D42A40EC6C00471EED /* DigimonViewModel.swift in Sources */,
-				747C65C82A3A7CD500D767C5 /* Persistence.swift in Sources */,
+				741665012A4CF1F200613770 /* TabBarView.swift in Sources */,
 				747C65CB2A3A7CD500D767C5 /* DigimonCharacterFinder_SwiftUI.xcdatamodeld in Sources */,
 				745579D62A48D83E00471EED /* DigimonRowView.swift in Sources */,
 				741664F42A4CE2DA00613770 /* FavoritesView.swift in Sources */,
+				741664FF2A4CF13700613770 /* DataController.swift in Sources */,
 				741664F92A4CE47200613770 /* LevelType.swift in Sources */,
 				747C65C12A3A7CD400D767C5 /* DigimonListView.swift in Sources */,
 				747C65BF2A3A7CD400D767C5 /* DigimonCharacterFinder_SwiftUIApp.swift in Sources */,

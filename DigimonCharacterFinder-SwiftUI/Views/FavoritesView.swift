@@ -19,6 +19,10 @@ struct FavoritesView: View {
                 Text("You do not have any favorites yet! Start adding!")
                     .navigationTitle("Favorites")
                     .navigationBarTitleDisplayMode(.inline)
+                
+                Image("digimon-logo")
+                    .resizable()
+                    .frame(width: 270, height: 150)
             } else {
                 List {
                     ForEach(moc.savedEntities) { digimon in

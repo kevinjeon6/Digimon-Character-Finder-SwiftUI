@@ -29,6 +29,8 @@ class DataController: ObservableObject {
                 print("Core data successfully loaded")
             }
         }
+        
+        getFavorites()
     }
     
     // MARK: - Methods

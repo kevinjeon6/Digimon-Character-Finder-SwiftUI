@@ -9,12 +9,17 @@ import SwiftUI
 
 @main
 struct DigimonCharacterFinder_SwiftUIApp: App {
-    let persistenceController = PersistenceController.shared
+    
+    // MARK: - Properties
+    @StateObject private var viewModel = DigimonViewModel()
+    @StateObject private var dataController = DataController()
+   
 
     var body: some Scene {
         WindowGroup {
-            DigimonListView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+           TabBarView()
+                .environmentObject(viewModel)
+                .environmentObject(dataController)
         }
     }
 }

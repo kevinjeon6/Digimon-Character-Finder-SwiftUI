@@ -11,7 +11,7 @@ import CoreData
 struct DigimonListView: View {
     
     // MARK: - Properties
-    @StateObject private var viewModel = DigimonViewModel()
+    @EnvironmentObject var viewModel: DigimonViewModel
 
 
     // MARK: - Body

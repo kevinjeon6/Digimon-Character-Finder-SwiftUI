@@ -8,14 +8,49 @@
 import SwiftUI
 
 struct FavoritesView: View {
+    
+    @EnvironmentObject var moc: DataController
+    
+    
     var body: some View {
         NavigationStack {
-            Text("Place Favorite Digimon Here")
             
+            if moc.savedEntities.isEmpty {
+                Text("You do not have any favorites yet! Start adding!")
+                    .navigationTitle("Favorites")
+                    .navigationBarTitleDisplayMode(.inline)
+            } else {
+                List {
+                    ForEach(moc.savedEntities) { digimon in
+                        HStack {
+                            AsyncImage(url: URL(string: digimon.img ?? "N/A")) {
+                                phase in
+                                
+                                if let image = phase.image {
+                                    image
+                                        .resizable()
+                                        .scaledToFit()
+                                } else if phase.error != nil {
+                                    Text("Couldn't upload")
+                                } else {
+                                    ProgressView()
+                                }
+                            }
+                            .frame(width: 100, height: 100)
+                            
+                            VStack(alignment: .leading) {
+                                Text(digimon.name ?? "Unknown Name")
+                                Text(digimon.level ?? "Unknown Level")
+                            }
+                        }
+                    }
+                    .onDelete(perform: moc.deleteItem)
+                }
+                .listStyle(.plain)
+                .navigationTitle("Favorites")
+                .navigationBarTitleDisplayMode(.inline)
+            }
         }
-        .listStyle(.plain)
-        .navigationTitle("Favorites")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

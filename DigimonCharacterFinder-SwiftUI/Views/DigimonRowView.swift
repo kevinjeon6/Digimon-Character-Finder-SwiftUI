@@ -10,6 +10,7 @@ import SwiftUI
 struct DigimonRowView: View {
     
     // MARK: - Properties
+    @EnvironmentObject var moc: DataController
     @State private var isFavorited: Bool = false
     
     var digiInfo: Digimon
@@ -39,6 +40,13 @@ struct DigimonRowView: View {
             Spacer()
             Button {
                 isFavorited.toggle()
+                
+                if isFavorited {
+                    moc.addItem(character: digiInfo)
+                } else {
+                    try? moc.deleteFavorite(character: digiInfo)
+                }
+                
             } label: {
                 Image(systemName: isFavorited ? "star.fill" : "star")
                     .font(.title2)
@@ -46,6 +54,9 @@ struct DigimonRowView: View {
 
         }
         .padding(.horizontal)
+        .onAppear {
+            isFavorited = moc.isFavorite(character: digiInfo)
+        }
     }
 }
 

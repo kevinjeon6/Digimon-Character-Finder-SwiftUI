@@ -80,5 +80,6 @@ struct DigimonListView: View {
 struct DigimonListView_Previews: PreviewProvider {
     static var previews: some View {
         DigimonListView()
+            .environmentObject(DigimonViewModel())
     }
 }

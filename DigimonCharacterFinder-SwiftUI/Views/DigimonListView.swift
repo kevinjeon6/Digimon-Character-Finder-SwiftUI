@@ -26,9 +26,6 @@ struct DigimonListView: View {
             .listStyle(.plain)
             .navigationTitle("Digimon")
             .navigationBarTitleDisplayMode(.inline)
-            .task {
-                try? await viewModel.getDigimonData()
-            }
             .toolbar {
                 ToolbarItem {
                     Menu {
